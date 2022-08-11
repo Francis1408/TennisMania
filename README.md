@@ -1,4 +1,4 @@
-<img src = "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/GameLogo.png" align= "center">  
+<img src = "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/GameLogo.png" display= "block" margin-left= "auto" margin-right="auto" width="50%">  
 
 #### Developed by: Francisco Abreu Gonçalves
 
