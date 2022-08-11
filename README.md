@@ -1,4 +1,4 @@
-![alt text](https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/GameLogo.png)
+<img src = "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/GameLogo.png" align= "center">  
 
 #### Developed by: Francisco Abreu Gonçalves
 
