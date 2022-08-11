@@ -32,21 +32,21 @@ Two players will compete against each other in order to score points. Whenever a
 
 Before the match, the game lets the players choose between 6 playable characters. All of them are from the classic [Mario Tennis](https://www.mariowiki.com/Mario_Tennis_(Game_Boy_Color)) From GameBoy Color:
 
-<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/acozIcon.png" text-align = "left"> Acoz
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/acozIcon.png" text-align = "left" width="50" height="50"> Acoz
 
-<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/bobIcon.png" text-align = "left"> Bob
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/bobIcon.png" text-align = "left" width="50" height="50"> Bob
 
-<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/brianIcon.png" text-align = "left"> Brian
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/brianIcon.png" text-align = "left" width="50" height="50"> Brian
 
-<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/harryIcon.png" text-align = "left"> Harry
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/harryIcon.png" text-align = "left" width="50" height="50"> Harry
 
-<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/pamIcon.png" text-align = "left"> Pam
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/pamIcon.png" text-align = "left" width="50" height="50"> Pam
 
-<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/sammyIcon.png" text-align = "left"> Sammy
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/sammyIcon.png" text-align = "left" width="50" height="50"> Sammy
 
 #### How to run
 
-In order to run the game, you need, at first, install the following libraries:
+In order to run the game you need, at first, install the following libraries:
 
 | Libraries    | Download command in Linux             | 
 |--------------|:--------------------------------------|
