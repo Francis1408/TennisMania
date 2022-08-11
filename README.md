@@ -3,7 +3,7 @@
 #### Developed by: Francisco Abreu Gonçalves
 
 
-<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/RacketSelect.png" width="400" height="500">
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/RacketSelect.png" width="50" height="40">
 
 #### About:
 
