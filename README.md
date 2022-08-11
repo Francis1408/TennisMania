@@ -1,23 +1,13 @@
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-
-<img src = "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/GameLogo.png" class="center">  
+<img src = "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/GameLogo.png" align = "center">  
 
 #### Developed by: Francisco Abreu Gonçalves
 
 
-![alt text](https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/RacketSelect.png)
+<img src= "https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/RacketSelect.png" width="400" height="500">
+
 #### About:
 
 Tennis Mania is game project developed during the Computer Graphics classes. The game is inspired by the classics Pong genre games, in which two players compete to score more points by rebounding the ball to the rival area.
-
-<p> Teste </p>
 
 ![alt text](https://github.com/Francis1408/TennisMania/blob/main/bin/Debug/RacketSelect.png)
 #### Controls:
