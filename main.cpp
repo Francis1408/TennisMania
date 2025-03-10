@@ -9,6 +9,9 @@
 #include "Gamemode.h"
 #include "Refresh.h"
 #include "Board.h"
+#include <iostream>
+
+
 #define WIDTH   300.0
 #define HEIGHT  300.0
 #define PI 3.1415
@@ -48,6 +51,7 @@ GLuint pamdefeat;GLuint pamicon;GLuint pampoints;
 GLuint brianp1; GLuint brianp1hit;GLuint brianp2;GLuint brianp2hit;GLuint brianup;GLuint briandown;GLuint brianvictory;
 GLuint briandefeat;GLuint brianicon;GLuint brianpoints; //TOTAS AS VARIAVEIS DO JOGO
 
+using namespace std;
 
 void resetGame(){
  uP1=0,uP2=0,dP1=0,dP2=0,P1set=0,P2set=0;skey = 0;
@@ -747,29 +751,33 @@ int ballIn(sprite player){
     else
         return 0;
 }
-int scenarioHit(){
-    if(ball.centery+(ball.width/2)>=HEIGHT*0.75||
-       ball.centery-(ball.width/2)<=HEIGHT*0.25)   //ANALISA SE A BOLA BATEU NO CENARIO
-        return 1;
-    else
-        return 0;
-}
-int spriteHit(){
+
+
+void BallMovement(){
+
+    ball.centerx += (WIDTH/80*cos(i));
+    ball.centery += (WIDTH/80*sin(j));
+
+    // Checking Scenario hit
+
+    // Analisando colisao com o PLAYER2
     if(ball.centerx+(ball.height/2)>=player2.centerx-(player2.height/2)){
         if(ballIn(player2)){
             p2hit = 1; //SE A BOLA BATEU NO P1
-            return 1;    // SE A BOLA BATEU NO P2
-        }
-        else{
+            i=refreshBallX(i); // MUDA TRAJETORIA DA BOLA
+            i+= PI; 
+        } else {
             p1Score();
             p1Game();    //SE NAO BATEU, P1 PONTUA
             resetball();
         }
     }
+    // Analisando colisao com o PLAYER1
     else if(ball.centerx-(ball.height/2)<=player1.centerx+(player1.height/2)){
         if(ballIn(player1)){
             p1hit = 1; //P1HIT = ALTERA ANIMACAO DO P1
-            return 1;   //SE A BOLA BATEU NO P1
+            i=refreshBallX(i); // MUDA TRAJETORIA DA BOLA
+            i+= PI; 
         }
         else{
             p2Score();
@@ -777,17 +785,9 @@ int spriteHit(){
             resetball();
         }
     }
-    else
-        return 0;
-}
-void ballroute(){
-    ball.centerx += (WIDTH/80*cos(i));
-    ball.centery += (WIDTH/80*sin(j));
-    if(spriteHit()){
-        i=refreshBallX(i); // ANALISA SE A BOLA COLIDIU COM UM JOGADOR
-        i+= PI;
-    }
-    else if(scenarioHit()){    //ANALISA SE A BOLA COLIDIU COM O CENARIO
+    // Analisando Colisao com o cenario
+    else if(ball.centery+(ball.width/2)>=HEIGHT*0.75||
+    ball.centery-(ball.width/2)<=HEIGHT*0.25) {
         j=refreshBallY(j);
         j-= PI;
     }
@@ -795,7 +795,7 @@ void ballroute(){
 void redraw(int timer){
     switch(gamemode){
     case Play:
-    ballroute();
+    BallMovement();
     moveup();
     movedown();
     glutPostRedisplay();

@@ -1,7 +1,7 @@
 # candh
 # set compiler
 CC = gcc
-LINFLAGS = -lm -lGL -lGLU -lglut -lSOIL 
+LINFLAGS = -lm -lGL -lSOIL -lGLU -lglut
 
 TARGET = main
 
